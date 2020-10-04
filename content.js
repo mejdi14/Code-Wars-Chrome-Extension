@@ -4,4 +4,3 @@ fetch('https://code-wars-checker-server.herokuapp.com/checker').then(r => r.text
         chrome.runtime.sendMessage({redirect: "https://github.com/mejdi14"});
     }
 })
-let imgs = document.getElementsByTagName('img');
