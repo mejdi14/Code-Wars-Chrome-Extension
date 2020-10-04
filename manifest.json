@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Code Wars Slave",
+  "version": "0.1",
+  "permissions": [
+    "https://code-wars-checker-server.herokuapp.com/*",
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "photos/azizi.png"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://www.youtube.com/*"
+    ],
+    "js": ["content.js"]
+  }]
+}
